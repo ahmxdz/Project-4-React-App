@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import HomePage from './pages/HomePage/HomePage';
+import AddClient from './pages/AddClient/AddClient';
+import SendMoney from './pages/SendMoney/SendMoney';
+import TransferHistory from './pages/TransferHistory/TransferHistory';
+import About from './pages/About/About'
+import NavBar from '../src/components/NavBar/NavBar';
+import {Switch, Route} from 'react-router-dom'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <NavBar />
+        <Switch>
+          <Route exact path='/' render={()=> <HomePage/>} />
+          <Route exact path='/add-client' render={() => <AddClient /> } />
+          <Route exact path='/send-money' render={() => <SendMoney /> } />
+          <Route exact path='/transfer-history' render={() => <TransferHistory /> } />
+          <Route exact path='/about' render={() => <About /> } />
+      </Switch>
     </div>
   );
 }
