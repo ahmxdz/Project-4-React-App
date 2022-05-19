@@ -8,5 +8,57 @@
 }
 
 .nav-link{
-    
+    color:white;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    padding:01rem;
+    height:100%;
+    cursor:pointer;  
+}
+
+.nav-link:active{
+    color:red;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    margin-right:-24px;
+}
+
+@media screen and (max-width: 768px){
+    .nav-menu{
+        display:none;
+    }
+}
+
+.navBtn{
+    display:flex;
+    align-items:center;
+    margin-right:24px;
+}
+
+@media screen and (max-width: 768px){
+    .navBtn{
+        display:none;
+    }
+}
+
+.signin-btn{
+    border-radius:4px;
+    background: #256ce1;
+    padding:10px 22px;
+    color:#fff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all 0.2s ease-in-out;
+    text-decoration:none;
+}
+
+.signin-btn:hover{
+    transition: all 0.2s ease-in-out;
+    background:#fff;
+    color:#010606;
 }

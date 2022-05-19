@@ -5,6 +5,7 @@ import AddClient from './pages/AddClient/AddClient';
 import SendMoney from './pages/SendMoney/SendMoney';
 import TransferHistory from './pages/TransferHistory/TransferHistory';
 import About from './pages/About/About'
+import SignIn from './pages/SignIn/SignIn'
 import NavBar from '../src/components/NavBar/NavBar';
 import {Switch, Route} from 'react-router-dom'
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/send-money' render={() => <SendMoney /> } />
           <Route exact path='/transfer-history' render={() => <TransferHistory /> } />
           <Route exact path='/about' render={() => <About /> } />
+          <Route exact path='/sign-in' render={() => <SignIn /> } />
       </Switch>
     </div>
   );

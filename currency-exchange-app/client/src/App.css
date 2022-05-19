@@ -8,8 +8,14 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App{
+      display: block;
+       position: absolute;
+       top: 0;
+       right: 0;
+       transform:translate(-100%, 75%);
+       font-size: 1.8rem;
+       cursor: pointer;
   }
 }
 
