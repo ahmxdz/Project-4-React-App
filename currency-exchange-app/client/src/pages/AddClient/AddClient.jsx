@@ -1,7 +1,7 @@
 import React from 'react'
 import './AddClient.css'
 import {useState} from 'react'
-import SendMoney from '../SendMoney/SendMoney'
+// import SendMoney from '../SendMoney/SendMoney'
 
 function AddClient(props) {
 
@@ -56,7 +56,7 @@ function AddClient(props) {
         />
         <button onClick={(e) => handleClient(e)}>Add Recipient</button>
         
-         <SendMoney firstName={firstName} lastName={lastName} email={email}/>
+         {/* <SendMoney firstName={firstName} lastName={lastName} email={email}/> */}
         
 
       </form>
