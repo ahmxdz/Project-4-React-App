@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react'
-import HomePage from './pages/HomePage/HomePage';
-import AddClient from './pages/AddClient/AddClient';
-import SendMoney from './pages/SendMoney/SendMoney';
-import TransferHistory from './pages/TransferHistory/TransferHistory';
-import About from './pages/About/About'
-import SignIn from './pages/SignIn/SignIn'
-import NavBar from '../src/components/NavBar/NavBar';
+import HomePage from '../HomePage/HomePage';
+import AddClient from '../AddClient/AddClient';
+import SendMoney from '../SendMoney/SendMoney';
+import TransferHistory from '../TransferHistory/TransferHistory';
+import About from '../About/About'
+import SignIn from '../SignIn/SignIn'
+import NavBar from '../../components/NavBar/NavBar';
 import {Switch, Route} from 'react-router-dom'
 
 

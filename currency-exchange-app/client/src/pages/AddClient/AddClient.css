@@ -1,0 +1,41 @@
+.form-create {
+    max-width:25rem;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.form-create label{
+    text-align:left; 
+    display:flex;
+    font-size:20px;
+    color:#256ce1;
+    margin-top:1.875rem;
+}
+
+.form-create input,.form-create textarea,.form-create select{
+    width:100%;
+    padding:6px 10px;
+    border:1px solid #ddd;
+    box-sizing:border-box;
+    display:block;
+}
+
+.form-create button{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background:#256ce1;
+    color:#fff;
+    border: 0px;
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+    width: 25rem;
+    height: 2rem;
+}
+
+.form-create h2{
+    font-size:30px;
+    color:#256ce1;
+    margin-bottom:30px;
+}
