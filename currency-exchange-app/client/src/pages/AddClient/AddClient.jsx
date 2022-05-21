@@ -1,24 +1,34 @@
 import React from 'react'
 import './AddClient.css'
 import {useState} from 'react'
+import SendMoney from '../SendMoney/SendMoney'
 
-function AddClient() {
+function AddClient(props) {
+
 
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
 
-  const handleClient = () => {
-    fetch('http://localhost:6001/add-client')
+  const handleClient = (e) => {
+    e.preventDefault()
+    console.log('reaching this line')
+    fetch('/api/clients', { 
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          firstName, lastName, email
+        }),
+    })
       .then(response => {
-        // handle the response
+        props.history.push('/send-money')
         console.log(response);
       })
       .catch(error => {
         // handle the error
       });
   };
-  
+
   return (
     <div className='form-create'>
       <h2> Add a recipient </h2> 
@@ -44,12 +54,10 @@ function AddClient() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         />
-        <button onClick={() => handleClient()}>Add Recipient</button>
-        <p>
-          {firstName}
-          {lastName}
-          {email}
-        </p>
+        <button onClick={(e) => handleClient(e)}>Add Recipient</button>
+        
+         <SendMoney firstName={firstName} lastName={lastName} email={email}/>
+        
 
       </form>
 

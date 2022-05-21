@@ -17,7 +17,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path='/' render={()=> <HomePage/>} />
-          <Route exact path='/add-client' render={() => <AddClient /> } />
+          <Route exact path='/add-client' render={({history}) => <AddClient history={history}/> } />
           <Route exact path='/send-money' render={() => <SendMoney /> } />
           <Route exact path='/transfer-history' render={() => <TransferHistory /> } />
           <Route exact path='/about' render={() => <About /> } />

@@ -7,21 +7,18 @@ const exchangeSchema = new Schema({
     receiverId:[{type: Schema.Types.ObjectId, ref: 'Client'}],
 
     convertedFrom: {
-        type: Number,
-        min: 1,
-        max: 100000,
+        type: String,
         required: true
     },
 
     convertedTo: {
-        type: Number,
-        min: 1,
-        max: 100000,
+        type: String,
         required: true
     },
 
     exchangeRate: {
-
+        type: Number,
+        
     },
 
     amountSent:{
@@ -32,6 +29,9 @@ const exchangeSchema = new Schema({
 
     }
 
-})
+},{
+    timestamp: true
+}
+)
 
 module.exports = mongoose.model('Exchange', exchangeSchema)
