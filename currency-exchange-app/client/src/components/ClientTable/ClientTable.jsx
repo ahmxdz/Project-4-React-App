@@ -1,5 +1,6 @@
-import React ,{useEffect, useState } from 'react'
+ import React ,{useEffect, useState } from 'react'
 import {Table} from 'react-bootstrap'
+import './ClientTable.css'
 import ClientTableRow from '../../components/ClientTableRow/ClientTableRow'
 
 
@@ -17,22 +18,26 @@ const ClientTable = (props) => {
             console.log(err)
           })
         },[])
+        
 
     return (
-        <div> 
+        <div className="client-table"> 
             <Table striped variant="dark" bordered hover>
+            <table className='content-table'>
             <thead>
-                <tr>
+                <tr className='active-row'>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>Send Money</th>
                 </tr>
             </thead>
             <tbody> 
         
-            {clients.map((data) => <ClientTableRow firstName={data.firstName} lastName={data.lastName} email={data.email}/>
+            {clients.map((data) => <ClientTableRow id={data._id} firstName={data.firstName} lastName={data.lastName} email={data.email} />
             )}  
             </tbody>
+            </table>
             </Table>
         </div>
 

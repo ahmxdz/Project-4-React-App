@@ -5,6 +5,8 @@ const logger = require('morgan');
 const cors  = require('cors');
 
 const clientRouter = require('./server/routes/client.route')
+const exchangeRouter = require('./server/routes/exchange.route')
+const apiRouter = require('./server/routes/api.route')
 
 const app = express();
 
@@ -17,26 +19,13 @@ app.use(express.json());
 app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors())
+app.use('/currency-converter', apiRouter)
 
 // Put API routes here, before the "catch all" route
-// app.use('/api/users', require('./routes/api/users'));
+app.use('/api/users', require('./server/routes/users.route'));
 // app.use('/api/scores', require('./routes/api/scores'));
 app.use('/api/clients', clientRouter);
-// app.get('/api/clients', async (req, res) => {
-//   const client = await Client.find({});
-//       console.log(client)
-// });
-// app.post('/api/clients', async (req, res) => {
-//   try{
-//       console.log('hit this line')
-//       console.log(req.body);
-//       const client = new Client(req.body);
-//       await client.save();
-//           return res.json(client)
-//   }catch(err){
-//       throw err;
-//   }
-// })
+app.use('/api/exchange', exchangeRouter);
 
 // The following "catch all" route (note the *)is necessary
 // for a SPA's client-side routing to properly work 

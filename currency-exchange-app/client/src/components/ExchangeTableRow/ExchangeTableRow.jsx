@@ -1,5 +1,5 @@
 import React from 'react'
-import './ClientTableRow.css'
+// import './ClientTableRow.css'
 
 
 const ClientTableRow = (props) => {
@@ -7,8 +7,9 @@ const ClientTableRow = (props) => {
         <tr>
             <td>{props.firstName}</td>
             <td>{props.lastName}</td>
-            <td>{props.email}</td>
-            <td><button ><a href={`/send-money/${props.id}`}> Send Money</a></button></td>
+            <td>{props.convertedTo}</td>
+            <td>{props.convertedFrom}</td>
+            <td>{props.amountSent}</td>
         </tr>         
     )
 }

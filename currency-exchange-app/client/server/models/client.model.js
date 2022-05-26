@@ -15,7 +15,8 @@ const clientSchema = new Schema({
     email: {
         type: 'string',
         required: true
-    },
+    }
+
     
 },{
     timestamp: true
