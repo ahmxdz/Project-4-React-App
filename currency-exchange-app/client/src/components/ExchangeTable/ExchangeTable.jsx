@@ -19,10 +19,11 @@ const ExchangeTable = (props) => {
           })
         },[])
         
-
+          console.log(exchangeHistory)
+          console.log()
     return (
         <div className="client-table"> 
-            <Table striped variant="dark" bordered hover>
+            <Table >
             <table className='content-table'>
             <thead>
                 <tr className='active-row'>
@@ -31,6 +32,8 @@ const ExchangeTable = (props) => {
                 <th>Converted To</th>
                 <th>Converted From</th>
                 <th>Amount Sent</th>
+                <th>Converted Amount</th>
+                
                 </tr>
             </thead>
             <tbody> 
@@ -40,9 +43,11 @@ const ExchangeTable = (props) => {
              id={exchangeData._id} 
              firstName={exchangeData.firstName} 
              lastName={exchangeData.lastName} 
-             convertTo={exchangeData.convertedTo}
-             convertFrom={exchangeData.convertedFrom}
+             convertedTo={exchangeData.convertedTo}
+             convertedFrom={exchangeData.convertedFrom}
              amountSent={exchangeData.amountSent}
+             convertedAmount={exchangeData.convertedAmount}
+
              />
             )}  
             </tbody>

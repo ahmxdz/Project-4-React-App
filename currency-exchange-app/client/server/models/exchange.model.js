@@ -16,16 +16,15 @@ const exchangeSchema = new Schema({
         required: true
     },
 
-    exchangeRate: {
-        type: Number,
-        
-    },
-
     amountSent:{
         type: Number,
         min: 1,
-        max: 100000,
         required: true
+
+    },
+
+    convertedAmount:{
+        type: Number
 
     }
 

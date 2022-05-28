@@ -1,4 +1,4 @@
- import React ,{useEffect, useState } from 'react'
+import React ,{useEffect, useState } from 'react'
 import {Table} from 'react-bootstrap'
 import './ClientTable.css'
 import ClientTableRow from '../../components/ClientTableRow/ClientTableRow'

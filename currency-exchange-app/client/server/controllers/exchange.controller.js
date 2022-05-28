@@ -12,14 +12,25 @@ const index = async (req, res) => {
 
 const show = async (req, res, next) => {
     console.log(req.params.id)
-    await Client.findById(req.params.id, function (err) {
-        res.send('server for id is here')
+    await Exchange.findById(req.params.id, function() {
+        res.send(req.params.id)
     })
 
 }
-
+const createExchange = async (req, res) => {
+    try{
+        console.log('hit this line')
+        console.log(req.body);
+        const exchange = new Exchange(req.body);
+        await exchange.save();
+            return res.json(exchange)
+    }catch(err){
+        throw err;
+    }
+}
 
 module.exports = {
     show,
-    index
+    index,
+    createExchange,
 }

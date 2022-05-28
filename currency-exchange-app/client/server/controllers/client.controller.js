@@ -21,6 +21,14 @@ const createClient = async (req, res) => {
     }
 }
 
+const show = async (req, res, next) => {
+    console.log(req.params.id)
+    await Client.findById(req.params.id, function (err) {
+        res.send('server for id is here')
+    })
+
+}
+
 const deleteClient = async (req, res) => {
     await Client.deleteOne({_id: req.params.id})
     res.send({
@@ -31,6 +39,7 @@ const deleteClient = async (req, res) => {
 
 module.exports = {
     createClient,
-    index
+    index,
+    deleteClient
 
 }
