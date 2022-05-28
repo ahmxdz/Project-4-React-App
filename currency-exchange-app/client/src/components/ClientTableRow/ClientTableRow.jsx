@@ -17,8 +17,8 @@ const ClientTableRow = (props) => {
             <td>{props.firstName}</td>
             <td>{props.lastName}</td>
             <td>{props.email}</td>
-            <td><button ><a href={`/send-money/${props.id}`}> Send Money</a></button></td>
-            <td><button >DELETE</button></td>
+            <td><button><a href={`/send-money/${props.id}`} className="send-money-btn"> Send Money</a></button></td>
+            <td><button className="delete-money-btn">DELETE</button></td>
         </tr>         
     )
 }

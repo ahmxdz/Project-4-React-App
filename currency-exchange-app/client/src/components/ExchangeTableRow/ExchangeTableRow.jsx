@@ -2,7 +2,7 @@ import React from 'react'
 import getSymbolFromCurrency from 'currency-symbol-map'
 
 const ExchangeTableRow = (props) => {
-    // console.log(props, 'props')
+   
     return (
         <tr>
             <td>{props.firstName}</td>
