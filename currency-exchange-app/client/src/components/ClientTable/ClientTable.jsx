@@ -30,6 +30,7 @@ const ClientTable = (props) => {
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Send Money</th>
+                <th>DELETE</th>
                 </tr>
             </thead>
             <tbody> 

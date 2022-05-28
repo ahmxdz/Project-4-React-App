@@ -21,6 +21,13 @@ const createClient = async (req, res) => {
     }
 }
 
+const deleteClient = async (req, res) => {
+    await Client.deleteOne({_id: req.params.id})
+    res.send({
+        status: 200,
+    })
+}
+
 
 module.exports = {
     createClient,
