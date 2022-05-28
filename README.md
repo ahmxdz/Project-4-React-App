@@ -59,7 +59,6 @@ Link to the deployed app is here: <a href="http://localhost:3000/"> Mega Money E
 Link to the Trello Board is here: <a href="https://trello.com/b/WL3ahtCL/project-4-react-money-exchange-app"> TRELLO</a>
 
 ### Next Steps:
-<li> Implement a working exchange API </li>
 <li> Implement an actually transactional system</li>
 <li> Implement an different client side and company side account system </li>
 <li> Add an API that will make sure the correct currency symbol shows when selecting countries  </li>
