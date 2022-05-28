@@ -41,7 +41,7 @@ Add Client:
 <img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.50.39.png">
 
 Transfer History:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.50.51.png">
+<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-28 at 01.26.07.png">
 
 Sign In:
 <img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.55.19.png">
