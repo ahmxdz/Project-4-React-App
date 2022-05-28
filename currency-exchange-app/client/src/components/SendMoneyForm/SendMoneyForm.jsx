@@ -4,6 +4,7 @@ import { useState } from "react";
 const axios = require("axios");
 
 
+
 function SendMoneyForm(props) {
   const [amountSent, setAmountSent] = useState("");
   const [convertedFrom, setConvertedFrom] = useState("");
@@ -24,7 +25,7 @@ function SendMoneyForm(props) {
       },
       headers: {
         "X-RapidAPI-Host": "currency-converter5.p.rapidapi.com",
-        "X-RapidAPI-Key": "5255ea8b38mshde36be014c35413p1459a7jsna82c1e4a7f6b",
+        "X-RapidAPI-Key": process.env.API_KEY,
       },
     };
 

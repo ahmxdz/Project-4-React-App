@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import mmeTransparent from '/Users/ahmedali/Project-4-React-App/currency-exchange-app/client/src/imgs/mmetransparent.png'
+import mmeTransparent from '../../imgs/mmetransparent.png'
 
 
 function About() {
