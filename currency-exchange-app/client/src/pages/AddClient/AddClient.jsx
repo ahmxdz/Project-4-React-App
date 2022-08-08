@@ -56,10 +56,9 @@ function AddClient(props) {
         />
         <button onClick={(e) => handleClient(e)}>Add Recipient</button>
         
-        <p>
-          {firstName}
-          {lastName}
-        </p>
+        
+         
+        
          {/* <SendMoney firstName={firstName} lastName={lastName} email={email}/> */}
         
 

@@ -25,7 +25,7 @@ function SendMoneyForm(props) {
       },
       headers: {
         "X-RapidAPI-Host": "currency-converter5.p.rapidapi.com",
-        "X-RapidAPI-Key": process.env.API_KEY,
+        "X-RapidAPI-Key": '5255ea8b38mshde36be014c35413p1459a7jsna82c1e4a7f6b'
       },
     };
 
@@ -39,9 +39,7 @@ function SendMoneyForm(props) {
         );
 
         rate = response.data.rates[Object.keys(response.data.rates)[0]].rate;
-        convertedAmount =
-          response.data.rates[Object.keys(response.data.rates)[0]]
-            .rate_for_amount;
+        convertedAmount = response.data.rates[Object.keys(response.data.rates)[0]].rate_for_amount;
 
         document.getElementById("rate").innerHTML = "Rate Equals = " + rate;
         document.getElementById("convertedAmount").innerHTML =
@@ -96,34 +94,34 @@ function SendMoneyForm(props) {
   console.log(props.match.params.id);
 
   return (
-    <div className="form-create">
+    <div className="form-create" >
       <h2> Send Money to </h2>
       <form>
         <label>Amount to be sent: </label>
         <input
           type="number"
           required
-          value={amountSent}
+          value={amountSent.toUpperCase()}
           onChange={(e) => setAmountSent(e.target.value)}
         />
         <label>Converted From: </label>
         <input
           type="text"
           required
-          value={convertedFrom}
+          value={convertedFrom.toUpperCase()}
           onChange={(e) => setConvertedFrom(e.target.value)}
         />
         <label>Converted To: </label>
         <input
           type="text"
           required
-          value={convertedTo}
+          value={convertedTo.toUpperCase()}
           onChange={(e) => setConvertedTo(e.target.value)}
         />
         <button onClick={(e) => convertCurrency(e, props.match.params.id)}>
           Convert Amount
         </button>
-
+        
         <h3 id="rate"></h3>
         <h3 id="convertedAmount"></h3>
 
