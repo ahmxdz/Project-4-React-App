@@ -16,42 +16,42 @@
 
 ### Wire Frame:
 Log In:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.43.53.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.43.53.png">
 
 Sign Up:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.44.01.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.44.01.png">
 
 Transfer History:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.44.12.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.44.12.png">
 
 Add Client:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.44.20.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.44.20.png">
 
 Send Money:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.44.28.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.44.28.png">
 
 ### App Screen Shots:
 Send Money Page:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.50.14.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.50.14.png">
 
 Sign Up:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.55.35.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.55.35.png">
 
 Add Client:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.50.39.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.50.39.png">
 
 Transfer History:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-28 at 01.26.07.png">
+<img src="./src/imgs/Screen Shot 2022-05-28 at 01.26.07.png">
 
 Sign In:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.55.19.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.55.19.png">
 
 About Us:
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 21.51.00.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 21.51.00.png">
 
 ### ERD:
 
-<img src="currency-exchange-app/client/src/imgs/Screen Shot 2022-05-27 at 22.00.25.png">
+<img src="./src/imgs/Screen Shot 2022-05-27 at 22.00.25.png">
 
 ### Getting Started:
 Link to the deployed app is here: <a href="http://localhost:3000/"> Mega Money Exchange</a>
